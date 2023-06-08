@@ -45,4 +45,6 @@ find all instances of an amino acid sequence motif in protein structures and par
 
  4. Run motif-conformations.py from the command-line:
  
-    ```python [-h] [-q QUERY_LIST] [-g] motif structure_directory {pdb,cif} output_file```
+    ```
+    python [-h] [-q QUERY_LIST] [-g] motif structure_directory {pdb,cif} output_file
+    ```
