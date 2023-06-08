@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>internal_coord &mdash; Motif Conformation Finder 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="internal_coord.get_bonds" href="internal_coord.get_bonds.html" />
+    <link rel="prev" title="pdb_io.PolypeptideEntry" href="pdb_io.PolypeptideEntry.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Motif Conformation Finder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="motif_conformations.html">motif_conformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdb_io.html">pdb_io</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">internal_coord</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.get_bonds.html">internal_coord.get_bonds</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.get_coordinate.html">internal_coord.get_coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.get_sidechain_triads.html">internal_coord.get_sidechain_triads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.get_triads.html">internal_coord.get_triads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.split_coordinates.html">internal_coord.split_coordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.CoordinateData.html">internal_coord.CoordinateData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.InternalCoordinates.html">internal_coord.InternalCoordinates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="internal_coord.ResidueData.html">internal_coord.ResidueData</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Motif Conformation Finder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">internal_coord</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-internal_coord">
+<span id="internal-coord"></span><h1>internal_coord<a class="headerlink" href="#module-internal_coord" title="Permalink to this heading"></a></h1>
+<p>Read and write CSV files and parse protein structures</p>
+<p>Author: Adriaan Lategan</p>
+<p class="rubric">Functions</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="internal_coord.get_bonds.html#internal_coord.get_bonds" title="internal_coord.get_bonds"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_bonds</span></code></a>(hedra)</p></td>
+<td><p>Extract groups of 2 atoms from the biopython internal coordinate data</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="internal_coord.get_coordinate.html#internal_coord.get_coordinate" title="internal_coord.get_coordinate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_coordinate</span></code></a>(residue_letter, func, ...)</p></td>
+<td><p>internal coordinate values for the specified atom chains</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="internal_coord.get_sidechain_triads.html#internal_coord.get_sidechain_triads" title="internal_coord.get_sidechain_triads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_sidechain_triads</span></code></a>(sidechain_atom_groups)</p></td>
+<td><p>Extract groups of 3 atoms from the biopython internal coordinate sidechain data</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="internal_coord.get_triads.html#internal_coord.get_triads" title="internal_coord.get_triads"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_triads</span></code></a>(ic_data)</p></td>
+<td><p>Extract groups of 3 atoms from the biopython internal coordinate data</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="internal_coord.split_coordinates.html#internal_coord.split_coordinates" title="internal_coord.split_coordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">split_coordinates</span></code></a>(coordinate_type, coordinates)</p></td>
+<td><p>generate CoordinateData object of each coordinate value</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Classes</p>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="internal_coord.CoordinateData.html#internal_coord.CoordinateData" title="internal_coord.CoordinateData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CoordinateData</span></code></a>(coordinate_type, ...)</p></td>
+<td><p>Object for protein structure coordinates .</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="internal_coord.InternalCoordinates.html#internal_coord.InternalCoordinates" title="internal_coord.InternalCoordinates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InternalCoordinates</span></code></a>([backbone_atom_chains, ...])</p></td>
+<td><p>Object for accessing residue internal coordinates</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="internal_coord.ResidueData.html#internal_coord.ResidueData" title="internal_coord.ResidueData"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ResidueData</span></code></a>(protein, model, chain, position, ...)</p></td>
+<td><p>Object identifying an amino acid residue and recording its protein structure coordinates</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pdb_io.PolypeptideEntry.html" class="btn btn-neutral float-left" title="pdb_io.PolypeptideEntry" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="internal_coord.get_bonds.html" class="btn btn-neutral float-right" title="internal_coord.get_bonds" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Adriaan Lategan.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
