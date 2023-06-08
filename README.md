@@ -19,8 +19,13 @@ find all instances of an amino acid sequence motif in protein structures and par
 
 <br>
 
-
 <br>
+
+## Dependencies
+- Python 3.11
+- Biopython 
+- 
+
 
 <br>
 
