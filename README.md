@@ -64,5 +64,4 @@ find all instances of an amino acid sequence motif in protein structures and par
                                                                                                     
 ## Dive deeper :diving_mask::
    
-Read the [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/) to take a <br>
-deeper look at the code.
+Read the [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/) to take a deeper look at the code.
