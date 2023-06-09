@@ -8,14 +8,18 @@ find all instances of an amino acid sequence motif in protein structures and par
 </div>
  
 <br>
- 
+
 <div align = right>
   
+<!---------------------------------[ Badges ]----------------------------------> 
 [![Python](https://img.shields.io/badge/Python-3.11-informational?style=flat-square&logo=appveyor)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/falategan/motif-conformation-finder?style=flat-square)](/LICENCE)
+<!---------------------------------[ Badges ]---------------------------------->
+ [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/)
+  
 <br>
+  
 <br>
-[API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/)
   
 </div>
 
