@@ -58,13 +58,13 @@ find all instances of an amino acid sequence motif in protein structures and par
       is specified, then the program will attempt to parse all files in the `structure_directory` <br>
       and seek `motif` in all the protein chains it finds
     - use the `-g` flag if the protein structure files are gzipped 
-    - use `-o` to indicate the output file format 
     - `motif` is the amino acid sequence to seek. Note that the program currently only seeks exact <br>
       matches, and will not interpret promotif or regex motifs
     - `structure_directory` is the path of the the root directory that contains all the protein <br
        structure files
     - choose `cif` if the protein structure files are in the PDBx/MMCIF (.cif) format
     - choose `pdb` if the protein structure files are in the .pdb format
+    - `output_file` is the name of the output file that the program will write                                                                                                
                                                                                                     
 ## Dive deeper :diving_mask::
    
