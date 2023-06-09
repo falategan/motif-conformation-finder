@@ -10,13 +10,13 @@ find all instances of an amino acid sequence motif in protein structures and par
 <br>
  
 <div align = right>
- 
   
 [![Python](https://img.shields.io/badge/Python-3.11-informational?style=flat-square&logo=appveyor)](https://www.python.org/)
 [![License](https://img.shields.io/github/license/falategan/motif-conformation-finder?style=flat-square)](/LICENCE)
 <br>
 <br>
 [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/)
+  
 </div>
 
 ## Dependencies
@@ -34,7 +34,7 @@ find all instances of an amino acid sequence motif in protein structures and par
       This file is a long-format csv file containing the protein entry ids, the path to each <br>
       protein file from the root directory that contains all the protein structure files, and <br>
       the chain entry identifiers for each protein file, e.g. <br>
-      
+      <br>
      ``` 
      Protein ID, File Path, Chain
      1i6w, 1i6w.pdb.ent.gz, A
@@ -42,8 +42,7 @@ find all instances of an amino acid sequence motif in protein structures and par
      1gci, 1gci.pdb.gz, A
      ...        
      ```
-          
-
+     
  4. Run motif-conformations.py from the command-line:
  
     ```
@@ -62,3 +61,8 @@ find all instances of an amino acid sequence motif in protein structures and par
        structure files
     - choose `cif` if the protein structure files are in the PDBx/MMCIF (.cif) format
     - choose `pdb` if the protein structure files are in the .pdb format
+                                                                                                    
+## Dive deeper :diving_mask::
+   
+Read the [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/) to take a <br>
+deeper look at the code.
