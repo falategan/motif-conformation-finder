@@ -52,20 +52,20 @@ find all instances of an amino acid sequence motif in protein structures and par
     ```
     ./motif-conformations.py [-h] [-q QUERY_LIST] [-g] motif structure_directory {pdb,cif} output_file
     ```
-    - run `./motif-conformations.py -h` or `./motif-conformations.py --help` for command line <br>
-      usage help.
-    - use `-q` to specify the path to the chain query file you generated above in 3. If no file <br> 
-      is specified, then the program will attempt to parse all files in the `structure_directory` <br>
-      and seek `motif` in all the protein chains it finds
+    - run `./motif-conformations.py -h` or `./motif-conformations.py --help` for <br>
+      command line usage help.
+    - use `-q` to specify the path to the chain query file you generated above in 3. <br> 
+      If you do not specify a file, then the program will attempt to parse all files in the <br>
+      `structure_directory` and seek `motif` in all the protein chains it finds
     - use the `-g` flag if the protein structure files are gzipped 
-    - `motif` is the amino acid sequence to seek. Note that the program currently only seeks exact <br>
-      matches, and will not interpret promotif or regex motifs
-    - `structure_directory` is the path of the the root directory that contains all the protein <br
-       structure files
+    - `motif` is the amino acid sequence to seek. Note that the program currently only  <br>
+      seeks exact matches, and will not interpret promotif or regex motifs
+    - `structure_directory` is the path of the the root directory that contains all the <br>
+       protein structure files
     - choose `cif` if the protein structure files are in the PDBx/MMCIF (.cif) format
     - choose `pdb` if the protein structure files are in the .pdb format
     - `output_file` is the name of the output file that the program will write                                                                                                
                                                                                                     
-## Dive deeper :diving_mask::
+## :diving_mask: Dive deeper:
    
 Read the [API Documentation](https://motif-conformation-finder.readthedocs.io/en/latest/) to take a deeper look at the code.
