@@ -99,7 +99,6 @@ class PdbReader:
         
         Parameters
         ----------
-        
         pdb_directory : str
              a directory containing protein structure files
         pdb_type : str
@@ -107,7 +106,6 @@ class PdbReader:
         gzipped : bool
             true if the protein structure files are compressed with gzip, false
             if uncompressed
-        
         
         Attributes
         ----------
@@ -180,6 +178,8 @@ class PdbReader:
         """
         queries = PdbQueries()
         for file in self.pdb_directory.iterdir():
+            if not file.is_file():
+                continue
             path = file.name
             protein_id = path[:4]
             structure = self.read_file(protein_id, path)
