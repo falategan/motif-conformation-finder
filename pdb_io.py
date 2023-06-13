@@ -181,7 +181,7 @@ class PdbReader:
             if not file.is_file():
                 continue
             path = file.name
-            protein_id = path[:4]
+            protein_id = path[:path.index(".")]
             structure = self.read_file(protein_id, path)
             if not structure:
                 continue
