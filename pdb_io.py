@@ -178,15 +178,18 @@ class PdbReader:
         """
         queries = PdbQueries()
         for file in self.pdb_directory.iterdir():
-            if not file.is_file():
-                continue
-            path = file.name
-            protein_id = path[:path.index(".")]
-            structure = self.read_file(protein_id, path)
-            if not structure:
-                continue
-            for chain in structure.get_chains():
-                queries.add_query(protein_id, path, chain.id)
+            try:
+                if not file.is_file():
+                    continue
+                path = file.name
+                protein_id = path[:path.index(".")]
+                structure = self.read_file(protein_id, path)
+                if not structure:
+                    continue
+                for chain in structure.get_chains():
+                    queries.add_query(protein_id, path, chain.id)
+            except OSError as error:
+                warnings.warn(f"Encountered OSError {error} for file {file}")
         return queries
 
 
